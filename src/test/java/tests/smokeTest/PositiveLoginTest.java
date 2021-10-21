@@ -18,8 +18,8 @@ public class PositiveLoginTest {
         //test data username: manager ,
         qaConcortPage.usernameKutusu.sendKeys(ConfigReader.getProperty("CHQAValidUseranme"));
         //test data password : Manager1!
-        qaConcortPage.passWordKutusu.sendKeys(ConfigReader.getProperty("CHQAValidPassword"));
-        qaConcortPage.loginTusu.click();
+        qaConcortPage.passwordKutusu.sendKeys(ConfigReader.getProperty("CHQAValidPassword"));
+        qaConcortPage.loginButonu.click();
         //Degerleri girildiginde sayfaya basarili sekilde girilebildigini test et
         Assert.assertTrue(qaConcortPage.basariliGirisYaziElementi.isDisplayed());
         Driver.closeDriver();

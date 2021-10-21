@@ -23,8 +23,8 @@ public class NegativeLoginTest {
 
         qaConcortPage.usernameKutusu.sendKeys(ConfigReader.getProperty("CHQAValidUseranme"));
 
-        qaConcortPage.passWordKutusu.sendKeys(ConfigReader.getProperty("CHInvalidPassword"));
-        qaConcortPage.loginTusu.click();
+        qaConcortPage.passwordKutusu.sendKeys(ConfigReader.getProperty("CHInvalidPassword"));
+        qaConcortPage.loginButonu.click();
         Assert.assertTrue(qaConcortPage.loginFailedYazisi.isDisplayed());
     }
     @Test
@@ -36,8 +36,8 @@ public class NegativeLoginTest {
 
         qaConcortPage.usernameKutusu.sendKeys(ConfigReader.getProperty("CHQAInvalidUseranme"));
 
-        qaConcortPage.passWordKutusu.sendKeys(ConfigReader.getProperty("CHQAValidPassword"));
-        qaConcortPage.loginTusu.click();
+        qaConcortPage.passwordKutusu.sendKeys(ConfigReader.getProperty("CHQAValidPassword"));
+        qaConcortPage.loginButonu.click();
         Assert.assertTrue(qaConcortPage.loginFailedYazisi.isDisplayed());
     }
     @Test
@@ -49,8 +49,8 @@ public class NegativeLoginTest {
 
         qaConcortPage.usernameKutusu.sendKeys(ConfigReader.getProperty("CHQAInvalidUseranme"));
 
-        qaConcortPage.passWordKutusu.sendKeys(ConfigReader.getProperty("CHQAInvalidPassword"));
-        qaConcortPage.loginTusu.click();
+        qaConcortPage.passwordKutusu.sendKeys(ConfigReader.getProperty("CHQAInvalidPassword"));
+        qaConcortPage.loginButonu.click();
         Assert.assertTrue(qaConcortPage.loginFailedYazisi.isDisplayed());
         Driver.closeDriver();
     }
