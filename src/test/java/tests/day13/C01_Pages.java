@@ -11,7 +11,7 @@ import utilities.TestBase;
 
 public class C01_Pages extends TestBase {
 
-    @Test
+    @Test(groups = "birinciGrup")
     public void test(){
         // amazon sayfasina gidip
         //// nutella icin arama yapin
